@@ -1,0 +1,68 @@
+table{
+    border-collapse: collapse;
+    align-self: center;
+}
+
+th{
+    text-transform: capitalize;
+    background-color: blue;
+}
+
+th,td{
+    border: 1px solid black;
+    padding: 3px 5px;
+}
+
+#divFormulario{
+    display: flex;
+    justify-content: center; 
+}
+
+.inputError {
+    border: 1px solid red;
+    box-shadow: 0 0 5px red;
+}
+
+.danger {
+    color: red;
+    font-weight: bold;
+}
+  
+small {
+    display: block;
+}
+
+.botonesEstilo{
+    background-color: lightskyblue;
+    size: 3px;
+}
+
+nav{
+    background-color: orange;
+    display: flex;
+}
+
+#fotoPrincipal{
+    width: 1200px;
+}
+
+ /* 
+.spinner{
+
+    border:4px solid #000000;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: transparent;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}*/

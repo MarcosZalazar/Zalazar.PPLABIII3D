@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/scripts.js" type="module" defer></script> 
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/tablaDinamica.css">
+    <title>Mascotas</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./imagenes/LogoEmpresa.png"  alt="Logo de la empresa">
+            <p>
+                <a href="#" target="_blank">Nosotros</a>
+                <a href="#" target="_blank">Anuncios</a>
+                <a href="#" target="_blank">Blog</a>
+                <a href="#" target="_blank">Contacto</a>
+            </p>
+        </nav>
+    </header>
+    <main class="crud">
+        <section class="form-anuncio">
+            <h1>Administracion</h1> 
+            <img src="./imagenes/animales.jpg" id=fotoPrincipal alt="fotos de animales">  
+            <form action="#">
+                <fieldset>
+                    <legend>Información Del Anuncio</legend>
+                    <label>TITULO:</label><br>
+                    <input type="text" id="txtTitulo" placeholder="Titulo">
+                    <small></small>
+                    <br />
+                     
+                    <label>DESCRIPCION:</label><br>
+                    <input type="text" id="txtDescripcion" placeholder="Descripcion"><br>
+                    <small></small>
+                    <br />
+
+                    <label>ANIMAL:</label><br>
+                    <input type="radio" id="rbtAnimal" name="rbtAnimal" value="perro" checked>PERRO
+                    <input type="radio" id="rbtAnimal" name="rbtAnimal" value="gato">GATO 
+                    <br /><br />
+
+                    <label>PRECIO:</label><br>
+                    <input type="number" id="txtPrecio" placeholder="Precio">
+                    <small></small>
+                    <br />
+
+                    <div>
+                        <img src="./imagenes/perro boton.png" alt="imagen de animal">
+                        <input type="text" id="txtRaza" placeholder="Raza">
+                        <img src="./imagenes/ciguenia boton.png" alt="imagen de fecha">
+                        <input type="date" id="txtFechaNacimiento" placeholder="dd/mm/aaaaa">
+                        <img src="./imagenes/vacuna boton.png" alt="imagen de vacuna">
+                        <select name="txtVacuna" id="txtVacuna">
+                            <option value="si">si</option>
+                            <option value="no">no</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <button type="submit" class="botonesEstilo">
+                    <img src="./imagenes/guardar.png" alt="imagen de disquete">
+                    Guardar
+                </button>
+                <input type="button"  class="botonesEstilo" value="Eliminar" id="btnEliminar">
+                <input type="hidden"  class="botonesEstilo" name="txtId">
+            </form> 
+        </section>
+        <div class="spinner"></div>
+        <br />
+        <section class="lista-anuncio">
+            <div id="divTabla"></div>
+        </section>
+    </main>
+    <br />
+    <footer>
+        <nav>
+            <a href="#" target="_blank">Nosotros</a>
+            <a href="#" target="_blank">Anuncios</a>
+            <a href="#" target="_blank">Blog</a>
+            <a href="#" target="_blank">Contacto</a>
+        </nav>
+        <p>Todos los Derechos Reservados 2019 &copy;</p>
+    </footer>
+</body>
+</html>
